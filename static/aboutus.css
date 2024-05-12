@@ -1,0 +1,64 @@
+.Team_header{
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: #810947;
+  }
+.team-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+h2.mb-3 {
+    font-weight: bold;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: #810947;
+  }
+h1 {
+    margin-top: 20px;
+}
+.group-image img {
+    width: 500px; 
+    border-radius: 10px; 
+}
+.abt_naritwa{
+    font-size: 20px; 
+    color: #810947;
+    font-family: "Arial", sans-serif; 
+    text-align: justify;
+
+}
+.team-container{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.group-image {
+    margin-top: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #810947;
+    font-family: "Arial", sans-serif;
+}
+.team-member a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #810947;
+    font-family: "Arial", sans-serif;
+}
+
+.team-member img {
+    width: 100px; 
+    border-radius: 50%;
+}  

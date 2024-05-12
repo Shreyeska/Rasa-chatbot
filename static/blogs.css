@@ -1,0 +1,11 @@
+.Blog1 {
+    
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide any overflow */
+    text-align: center; /* Center the content inside the container */
+}
+
+.banner img {
+    width:  70%; /* Make the image fill its container horizontally */
+    height: auto; /* Maintain the aspect ratio */
+}
