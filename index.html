@@ -17,6 +17,19 @@
 	<link rel="stylesheet" type="text/css" href="static/main.css">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 
+	<!-- FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alkatra:wght@400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -29,22 +42,23 @@
 				  <img src="static/img/full.png" alt="Naritwa Logo" class="logo-img">
 			  </a>
 		  </div>
-		  <div class="user-name">Naritwa</div>
+		  <div class="user-name">NARITWA</div>
 		  <ul class="user-menu">
 			<li class="user-menu-list">
-			  <a href="#">Home</a>
+			  <a href="index.html">Home</a>
 			</li>
 			<li class="user-menu-list">
-			  <a href="aboutus.html">About Us</a>
-			</li>
+				<a href="aboutus.html">About Us</a>
+			  </li>
 			<li class="user-menu-list">
 			  <a href="blogs.html">Blogs</a>
 			</li>
 			<li class="user-menu-list ">
 			  <a href="resources.html">Resources</a>
 			</li>
+			
 			<li class="user-menu-list last-list">
-			  <a href="register.html">Register</a>
+				<button class="register-button"> <a href="register.html">Register</a></button>
 			</li>
 		  </ul>
 		
@@ -74,169 +88,65 @@
 				</div>
 			</div>
 
-			<!-- AD -->
-			<div class="col-md-12">
-			<div class="sliding-ad">
-				<div class="ad-container">
-				  <a href="link1.html"><img src="static/img/1ad.jpg" alt="Ad 1"></a>
-				  <a href="link2.html"><img src="static/img/2ad.jpg" alt="Ad 2"></a>
-				  <a href="link3.html"><img src="static/img/3ad.jpg" alt="Ad 3"></a>
-				</div>
-				
-				<button class="prev" onclick="prevSlide()">❮</button>
-				<button class="next" onclick="nextSlide()">❯</button>
-			  </div>
-			</div>
-			  
-			  
-			<!-- below right-->
-			<div class="col-md-5">
-				<div class="chat_window">
+	<!-- Disclaimer Section -->
+<section class="disclaimer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="disclaimer-text">
+                    <Please> This chatbot is intended for informational purposes only and should not be considered a substitute for professional legal or medical advice. Please note that the laws included in this chatbot are updated only until May 12, 2024.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="custom-hr">
+<style>
+    .emergency-contacts .card-body h3 {
+        font-size: 1.5rem; /* Adjust the font size as needed */
+    }
+</style>
 
-					<div class="top_menu">
-						<div class="title">Helping hands</div>
-					</div>
+<section class="emergency-contacts">
+    <div class="container">
+        <h2 class="section-title">Emergency Contacts</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="background-image: url('static/img/bg.png');">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>- National Women's Commission</h3>
+                                <p>1145</p>
+                                <h3>- Women's Helpline</h3>
+                                <p>1098</p>
+                                <h3>- Women's Rehabilitation Center</h3>
+                                <p>+977-1-4479526</p>
+                            </div>
+                            <div class="col-md-6">
+								<div class="vertical-line"></div>
+                                <h3>- Police Women and Children Service Center</h3>
+                                <p>1094</p>
+                                <h3>- Maiti Nepal</h3>
+                                <p>+977-1-4441284</p>
+                                <h3>- Transitional Women's Shelter</h3>
+                                <p>+977-1-5521440</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-					<!-- help container -->
-					<div class="panel-group" id="accordion">
+<hr class="custom-hr">
 
-						<!-- Law Firm Link 1 -->
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-lawfirm1">Ghimire Law Associates</a>
-								</h4>
-							</div>
-							<div id="collapse-lawfirm1" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="blog-post">
-										<div class="firm-info">
-											<h2 class="blog-post-title">Nepali Women in Politics: Success and Challenges</h2>
-											<p class="blog-post-meta">January 2024 by <a target="_blank" href="https://www.ghimirelaw.com/">Ghimire Law Associates</a></p>
-											<p>A new report on a training programme for women in hashtag Nepal’s legal profession has been released by the International Bar Association (IBA). The report was commissioned by the IBA and written by New Perimeter , the nonprofit affiliate of law firm DLA Piper, an IBA Group member. It includes the project’s goals, successes, and challenges. The report, International training of women lawyers in Nepal: A case study, reveals only 12 per cent of Nepali hashtag#lawyers are women (approximately 2,200) and there exists a gender bias against women that is similar to that seen in other jurisdictions.</p>
-										</div>
-										<div class="firm-image">
-											<img src="static/img/nepwomen.jpg" alt="Image 1">
-										</div>
-										<hr>
-									</div><!-- /.blog-post -->
-								</div>
-							</div>
-						</div>
-					
-						<!-- Law Firm Link 2 -->
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-lawfirm2">Arch Legal Services</a>
-								</h4>
-							</div>
-							<div id="collapse-lawfirm2" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="blog-post">
-										<div class="firm-info">
-											<h2 class="blog-post-title">Nepal Government Increases Minimum Wages for Workers</h2>
-											<p class="blog-post-meta">Aug. 27, 2023, by <a target="_blank" href="https://www.archlegalservices.com/">Arch Legal Services</a></p>
-											<p>Ensuring fair compensation for employees is an important aspect of maintaining a fair and equitable work environment. Nepal Government recently took a significant step by amending its minimum wage regulations, aimed at improving the livelihoods of its workers.<br><br>
 
-												The minimum salary is not the same in every country. It is typically set based on the cost of living in that country. In Nepal, the current minimum monthly salary was Rs. 15,000 now it has increased to Rs. 17,300. </p>
-										</div>
-										<div class="firm-image">
-											<img src="static/img/minwage.jpg" alt="Image 2">
-										</div>
-										<hr>
-									</div><!-- /.blog-post -->
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
-					
-
-				</div>
-			</div>
-			<!-- Below Left -->
-
-			<!-- Below Right -->
-			<div class="col-md-5">
-				<div class="chat_window">
-
-					<div class="top_menu">
-						<div class="title">Helping hands2</div>
-					</div>
-
-					<!-- help container -->
-					<div class="panel-group" id="accordion">
-
-						<!-- Law Firm Link 1 -->
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-lawfirm1">Ghimire Law Associates</a>
-								</h4>
-							</div>
-							<div id="collapse-lawfirm1" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="blog-post">
-										<div class="firm-info">
-											<h2 class="blog-post-title">Nepali Women in Politics: Success and Challenges</h2>
-											<p class="blog-post-meta">January 2024 by <a target="_blank" href="https://www.ghimirelaw.com/">Ghimire Law Associates</a></p>
-											<p>A new report on a training programme for women in hashtag Nepal’s legal profession has been released by the International Bar Association (IBA). The report was commissioned by the IBA and written by New Perimeter , the nonprofit affiliate of law firm DLA Piper, an IBA Group member. It includes the project’s goals, successes, and challenges. The report, International training of women lawyers in Nepal: A case study, reveals only 12 per cent of Nepali hashtag#lawyers are women (approximately 2,200) and there exists a gender bias against women that is similar to that seen in other jurisdictions.</p>
-										</div>
-										<div class="firm-image">
-											<img src="static/img/nepwomen.jpg" alt="Image 1">
-										</div>
-										<hr>
-									</div><!-- /.blog-post -->
-								</div>
-							</div>
-						</div>
-					
-						<!-- Law Firm Link 2 -->
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-lawfirm2">Arch Legal Services</a>
-								</h4>
-							</div>
-							<div id="collapse-lawfirm2" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="blog-post">
-										<div class="firm-info">
-											<h2 class="blog-post-title">Nepal Government Increases Minimum Wages for Workers</h2>
-											<p class="blog-post-meta">Aug. 27, 2023, by <a target="_blank" href="https://www.archlegalservices.com/">Arch Legal Services</a></p>
-											<p>Ensuring fair compensation for employees is an important aspect of maintaining a fair and equitable work environment. Nepal Government recently took a significant step by amending its minimum wage regulations, aimed at improving the livelihoods of its workers.<br><br>
-
-												The minimum salary is not the same in every country. It is typically set based on the cost of living in that country. In Nepal, the current minimum monthly salary was Rs. 15,000 now it has increased to Rs. 17,300. </p>
-										</div>
-										<div class="firm-image">
-											<img src="static/img/minwage.jpg" alt="Image 2">
-										</div>
-										<hr>
-									</div><!-- /.blog-post -->
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
-					
-
-				</div>
-			</div>
-			<!-- End of Below right -->
-
-		</div>
-
-	</div>
-
-<!-- END OF BODY -->
 
 <!-- FOOTER -->
 <footer class="site-footer">
 	<div class="hr-container">
-		<hr class="footer-hr">
 	</div>
     <div class="container">
         <div class="row">
@@ -265,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="custom-hr">
         <p class="text-center">© 2024 Naritwa. All rights reserved.</p>
     </div>
 </footer>

@@ -2,8 +2,9 @@
 	box-sizing: border-box;
 }
 body {
-	background: rgb(255, 236, 251);
-	background: linear-gradient(180deg, rgba(255, 236, 251,1) 30%, rgba(220,179,128,1) 70%);
+	background-color: rgba(225, 211, 204, 0.7); /* Background color with 70% opacity */
+		  
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E1D4C1", endColorstr="#E1D3CC", GradientType=1 );
 	font-family: 'Calibri', 'Roboto', sans-serif;
 }
 
@@ -41,8 +42,9 @@ body {
 
 .top_menu .title {
 	text-align: center;
-	color: #810947;
+	color: #811247;
 	font-size: 20px;
+	font-family: "Alegreya Sans SC", sans-serif;
 }
 
 /* messages inside the chatbox */
@@ -53,8 +55,10 @@ body {
 	list-style: none;
 	padding: 20px 10px 0 10px;
 	margin: 0;
+	font-size: 16px;
 	height: 500px;
 	overflow: scroll;
+	font-family: "Alegreya";
 }
 
 .messages .message {
@@ -122,14 +126,14 @@ body {
 }
 
 .messages .message.left .text_wrapper {
-	background-color: #f3eeca;
+	background-color: #ededd2;
 	margin-left: 20px;
 }
 
 .messages .message.left .text_wrapper::after,
 .messages .message.left .text_wrapper::before {
 	right: 100%;
-	border-right-color: #f3eeca;
+	border-right-color: #ededd2;
 }
 
 .messages .message.left .timestamp {
@@ -144,7 +148,7 @@ body {
 }
 
 .messages .message.right .text_wrapper {
-	background-color: #b0d4f3;
+	background-color: #AECEBC;
 	margin-right: 20px;
 	float: right;
 }
@@ -152,11 +156,11 @@ body {
 .messages .message.right .text_wrapper::after,
 .messages .message.right .text_wrapper::before {
 	left: 100%;
-	border-left-color: #b0d4f3;
+	border-left-color:#AECEBC;
 }
 
 .messages .message.right .timestamp {
-	color: #1a5770;
+	color: #0c2b37;
 }
 
 /* text input from user */
@@ -172,19 +176,21 @@ body {
 	flex-grow: 1;
 	outline-width: 0;
 	padding: 12px;
-	border: 1px solid #bcbdc0;
+	font-size: 16px;
+	font-family: "Alegreya";
+	border: 1px solid #811247;
 	border-radius: 50px;
 	margin-right: 15px;
 }
 
 .app_button_1 {
 	width: 140px;
-	background-color: #4B8078;
+	background-color: #A6597E; ;
 	border-radius: 50px;
 	cursor: pointer;
 	padding: 12px;
-
-	color: #fff;
+	font-family: "Alegreya";
+	color: white;
 	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
@@ -227,47 +233,111 @@ body {
 }
 
 
-/**
- * SLIDING AD
- */
-
- .ad-container {
+/* Container styles */
+.sliding-ad {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  /* Ad slide styles */
+  .ad-container {
 	display: flex;
 	transition: transform 0.5s ease;
-	transform: translateX(0); /* Initially start from the right */
   }
   
   .ad-container a {
-	flex: 0 0 100%;
+	width: 80%;
   }
   
   .ad-container img {
-	display: block;
 	width: 100%;
-	height: auto;
+	display: block;
   }
   
+  /* Previous and Next buttons styles */
   .prev,
   .next {
 	position: absolute;
 	top: 50%;
-	background-color: transparent;
-	border: none;
+	transform: translateY(-50%);
 	cursor: pointer;
-	font-size: 24px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
 	padding: 10px;
+	border: none;
+	border-radius: 50%;
+	z-index: 1; /* Ensure buttons appear above the images */
   }
   
   .prev {
-	left: 0;
+	left: 10px;
   }
   
   .next {
-	right: 0;
+	right: 10px;
   }
   
 
-/* CLOSE SLIDING AD */
+/* Emergency Contacts Section */
 
 
+.section-title {
+	margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #333;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	color: #811247;
+	padding-top: 40px;
 
+}
+
+
+.card {
+	margin-top: 10px;
+    border: none;
+	margin: 10px auto 40px auto;
+	margin-bottom: 40px;
+	padding-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+	width: 80%;
+    background-image: url('static/img/bg.png'); /* Correct the URL syntax */ /* Fit the background image within the card */
+    background-repeat: no-repeat; /* Ensure the background image is not repeated */
+    background-position: center center; /* Center the background image both vertically and horizontally */
+ /* Rotate the background image by 90 degrees */
+}
+
+
+.card-body {
+	
+    font-family: "Alegreya Sans SC", sans-serif;
+	font-size: 27px;
+	color: #811247; 
+    text-align: center;/* Text color for better visibility */
+    background-size: contain; /* Fit the background image within the card */
+    background-repeat: no-repeat; /* Ensure the background image is not repeated */
+    background-position: center center; /* Center the background image both vertically and horizontally */
+}
+
+
+.card-text {
+    font-size: 16px;
+}
+
+.card-text strong {
+    font-weight: bold;
+}
+
+
+.vertical-line {
+    border-left: 1px solid #811247; /* Adjust the color and thickness as needed */
+    height: 80%; /* Make the line take up the full height of the column */
+    position: absolute; /* Position the line absolutely within the column */
+    top: 30; /* Align the line to the top of the column */
+    left: 1%; /* Position the line in the center of the column */
+}
