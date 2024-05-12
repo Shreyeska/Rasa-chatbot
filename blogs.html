@@ -16,7 +16,7 @@
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="static/main.css">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
-	<link rel="stylesheet" type="text/css" href="static/blogs.css">
+	<link rel="stylesheet" type="text/css" href="static/blogsnresources.css">
 
 
 </head>
@@ -55,13 +55,30 @@
   <!-- END OF NAVBAR -->
 
 <!-- Blogs -->
-<div class = Blog1>
-	<div class="banner">
-	<img src="static\img\blog1banner.jpg" alt="Team Naritwa">	
-	</div>
-</div>
+<div class="container">
 
-<!-- ENd of Blogs -->
+	<button id="btn1" role="button" onclick="showCard(1)"> Empowering Women in the Workplace </button>
+	<button id="btn2" role="button" onclick="showCard(2)"> Legal Rights Every Woman Should Know</button>
+	<button id="btn3"role="button" onclick="showCard(3)">Breaking the Stigma: Mental Health Awareness for Women</button>
+  <div class = "content">
+	<div id="card1" class ="card active">
+		
+		<img src="static/img/12.png" ><br>
+		<h2><u>Empowering Women in the Workplace</u></h2>
+		This blog discusses strategies for promoting gender equality and empowering women in the workplace. It covers topics such as leadership development, mentorship programs, and creating an inclusive work culture.</div>
+	<div id="card2" class="card">
+		<img src="static/img/13.png" ><br>
+		<h2><u> Legal Rights Every Woman Should Know</u></h2>
+		In this blog, we explore the legal rights that women have in various aspects of their lives, including marriage, divorce, property ownership, and employment. It aims to educate women about their rights and how they can assert them effectively.</div>
+	<div id="card3" class="card">
+		<img src="static/img/14.png" ><br><br>
+		<h2><u>Breaking the Stigma: Mental Health Awareness for Women</u></h2>
+		This blog sheds light on the importance of mental health awareness for women and the challenges they face in seeking support for mental health issues. It discusses stigma, access to mental health services, and self-care strategies for women to prioritize their mental well-being.</div>
+  </div>
+</div>
+  
+
+<!-- End of Blogs -->
 
 
   <!-- FOOTER -->
@@ -111,6 +128,8 @@
 
 <!-- custom scripts -->
 <script src="static/main.js"></script>
+<script src = "static/blogsnresources.js"></script>
+
 </body>
 
 </html>
