@@ -80,15 +80,66 @@ function showBotMessage(message, datetime) {
  * Get input from user and show it on screen on button click.
  */
 $('#send_button').on('click', function (e) {
-	// get and show message and reset input
-	showUserMessage($('#msg_input').val());
-	$('#msg_input').val('');
+    // Get user message and reset input field
+    const userMessage = $('#msg_input').val().trim();
+    $('#msg_input').val('');
 
-	// show bot message
-	setTimeout(function () {
-		showBotMessage(randomstring());
-	}, 300);
+    // Display user message
+    showUserMessage(userMessage);
+
+    // Delayed response from bot based on user input
+    setTimeout(function () {
+        handleUserInput(userMessage);
+    }, 300);
 });
+
+function handleUserInput(userMessage) {
+    // Convert user message to lowercase for easier comparison
+    const lowercaseMessage = userMessage.toLowerCase();
+
+    // Bot responses based on user input
+    switch (lowercaseMessage) {
+        case 'hi':
+            showBotMessage("Namaste. How can I help you today?");
+            break;
+        case 'my husband wants me to get an abortion. i don’t want to.':
+            showBotMessage(`I am sorry to hear that. The Right to Safe Motherhood and Reproductive Health Act, 2075 (2018) protects Nepali Women against forced abortions. Chapter 4, Subsection 16 of the act declares that no one shall get the abortion conducted by coercing a pregnant woman, threatening, enticing or tempting her. As per the The National Penal (Code) Act, 2017 person who commits this offense referred shall be liable to: A sentence of imprisonment for a term not exceeding one year and a fine not exceeding ten thousand rupees in the case of pregnancy of up to twelve weeks, A sentence of imprisonment for a term not exceeding three years and a fine not exceeding thirty thousand rupees in the case of pregnancy of more than twelve weeks and up to twenty-five weeks, A sentence of imprisonment for a term not exceeding five years and a fine not exceeding fifty thousand rupees in the case of pregnancy of more than twenty-five weeks. In such circumstances, it's crucial to take action. You have the right to file a complaint with the authorities.`);
+            break;
+        case 'is there a time limit to file a complaint?':
+            showBotMessage(`Yes, you must file a complaint within six months of gaining knowledge of the offense. Otherwise, you may lose the opportunity to pursue legal action.`);
+            break;
+        case 'my fetus is a girl. my husband doesn’t want a daughter.':
+            showBotMessage(`I'm sorry you're facing such a difficult situation. What you have mentioned is also a criminal offense under the Right to Safe Motherhood and Reproductive Health Act. According to it: No one shall commit or cause to be committed an act to identify the sex of the fetus in the womb. A pregnant woman shall not be pressurized or compelled or intimidated or coerced or enticed or entrapped in undue influence to identify the sex of the fetus. I recommend that you seek legal advice and support to navigate this process effectively. Remember, you are not alone, and there are people and resources available to help you through this challenging time.`);
+            break;
+        case 'my fetus is a girl. my husband doesn’t want a daughter.':
+            showBotMessage(`I'm truly sorry to hear that. It is important for you to know that the Domestic Violence (Offence and Punishment) Act, 2066 (2009) provides protection against domestic violence. It is explicitly stated in Chapter 3 , Subsection 1 that no one shall commit; or aid or abet; or incite the act of domestic violence. Domestic violence is a serious crime, and you have the right to protection and support.`);
+            break;
+        case 'how to file a complaint?':
+            showBotMessage(`Chapter 4 of the act details the complaint registration process for domestic violence cases. According to it, you have to do the following: You can lodge a written or oral complaint with either the Police Office, National Women Commission, or Local Body. If the complaint is filed with the National Women Commission, necessary action will be taken in accordance with prevailing National Women Commission law. If the complaint is filed with the Police Office or Local Body, the perpetrator must be produced within 24 hours of the complaint. If the perpetrator refuses to appear for a statement, arrest may be made. Within thirty days of registration of the complaint, reconciliation between the parties may be conducted if the victim desires and if it is found appropriate by the police officer or local body. The presence of the perpetrator must be ensured during the investigation, prosecution, and decision-making process of the complaint. If the perpetrator fails to appear, reconciliation fails, or if the parties cannot settle their dispute, the complaint, along with evidence and legal documents, shall be forwarded to the court within fifteen days after the expiration of the reconciliation period.`);
+            break;
+        case 'what rights do i have during the process as a victim?':
+            showBotMessage(`As per the act you have the following rights: If you have been physically wounded or mentally tortured, you should be immediately sent to the nearest hospital or health post for a check-up. An injury report shall be drawn up, and a copy sent to the Police Station if prepared by the Local Body.`);
+            break;
+        case 'are there any additional resources i could use?':
+            showBotMessage(`Yes. You can find information on and links to emergency contacts, relevant legal services, women centric social organizations and other support services on the Resources section of this website.`);
+            break;
+        case 'thank you':
+            showBotMessage(`You're welcome. Remember, you're not alone in this. If you ever need further assistance or support, don't hesitate to reach out. Take care of yourself, and stay safe.`);
+            break;
+        default:
+            showBotMessage(`I'm sorry, I didn't understand that. Could you please rephrase or ask another question?`);
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 /**
  * Returns a random string. Just to specify bot message to the user.
@@ -141,5 +192,4 @@ function updateSlide() {
 setInterval(nextSlide, 3000);
 
 // SLIDING AD
-
 
