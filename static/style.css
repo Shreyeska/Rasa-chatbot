@@ -65,3 +65,52 @@ body {
     text-decoration: underline; /* Underline anchor text on hover */
   }
 
+/* FOOTER */
+
+.footer-hr {
+  width: 80%; 
+  border-top: 1px solid #ccc; /* Add other border properties as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.site-footer {
+  padding: 50px 0;
+}
+
+.footer-item {
+  color: #333;
+}
+
+.footer-item p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #666;
+  font-size: 20px;
+}
+
+.social-icons li a:hover {
+  color: #333;
+}
+
+hr {
+  border-color: #ddd;
+}
+
+.text-center {
+  text-align: center;
+  color: #666;
+}
+/* END OF FOOTER */
