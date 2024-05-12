@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('archivo-black.woff2') format('woff2'),
+       url('archivo-black.woff') format('woff');
+}
 body {
     padding: 0px;
     margin: 0;
@@ -5,19 +10,22 @@ body {
 
   .top-header {
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
+    align-items: center;  
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add if needed: Align items at the start and end */ 
     padding-top: 3px;
     padding-left: 10px;
-    background-color: #EBA5CA;
+    padding-bottom: 3px;
+    background-color: #810947;
     height: 110px;
     margin: 0;
   }
   .logo-container {
     width: 105px; 
     height: 105px;
-    border-radius: 50%; 
+    margin-top: 15px;
     overflow: hidden; 
+    padding-left: 10px;
 }
 
 .logo-img {
@@ -25,21 +33,24 @@ body {
     height: auto;
 }
   .user-name {
-    color: #810947;
-    font-size: 25px;
-    font-weight: bold;
+    color: #ffecfb;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 40px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-right: auto;
-  }
-
-  .user-menu {
-    color: #810947;
-    font-size: 25px;
     font-weight: bold;
+  }
+  .custom-hr {
+    border-color: #811247; /* Change the color of the horizontal line */
+}
+  .user-menu {
+    color: #ffecfb;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 15px;
     text-align: right;
-    padding-right: 50px;
-    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-top: 7px;
     margin-right: 10px;
   }
 
@@ -56,14 +67,39 @@ body {
   }
 
   .user-menu-list a{
-  color: #810947;
+  color: #ffebfc;
   text-decoration: none;
   }
   
 
   .user-menu-list a:hover {
-    text-decoration: underline; /* Underline anchor text on hover */
+    text-decoration: underline; /* Underline anchor text on hover */color:#ffeeff
   }
+
+  .register-button {
+    background-color: #A6597E;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+
+}
+.user-menu-list.last-list a {
+  text-decoration: none; /* Remove underline by default */
+}
+
+.user-menu-list.last-list a:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.register-button:hover {
+    background-color: #9a416b;
+    transform: scale(1.09);
+    font-size: 20px;
+}
+
 
 /* FOOTER */
 
@@ -74,43 +110,74 @@ body {
   margin-bottom: 10px; /* Adjust the margin as needed */
 }
 .site-footer {
-  padding: 50px 0;
+  text-align: center; /* Align all contents to the center */
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-item {
-  color: #333;
+  color: #811247;
+  margin-top: 10px;
 }
 
 .footer-item p {
-  color: #666;
+  color: #811247;
   margin-bottom: 15px;
 }
 
 .social-icons {
   list-style-type: none;
   padding: 0;
+  color: #811247;
 }
 
 .social-icons li {
   display: inline-block;
   margin-right: 10px;
+  color: #811247;
 }
 
 .social-icons li a {
-  color: #666;
+  color: #811247;
   font-size: 20px;
 }
 
 .social-icons li a:hover {
   color: #333;
 }
-
-hr {
-  border-color: #ddd;
-}
-
 .text-center {
   text-align: center;
-  color: #666;
+  color:  #811247;
 }
 /* END OF FOOTER */
+
+/* Disclaimer Section */
+
+
+/* Disclaimer Section */
+.disclaimer-section {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.disclaimer-text {
+  font-size: 16px;
+  color: #777;
+  font-family: "Alegreya";
+
+}
+
+.disclaimer-text{
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.h3{
+  font-family: "Alegreya";
+  color: #811247; 
+
+}
